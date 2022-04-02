@@ -1,0 +1,9 @@
+# sort in alphabetical order if possible
+# use most detailed version possible
+# if one package must be installed before another:
+# explain any dependencies with comments
+pandas==1.4.2             # pandas data analysis toolkit
+psycopg2-binary==2.9.3    # postgresql database adapter
+pytz==2022.1              # timezones
+requests==2.27.1          # http library
+SQLAlchemy==1.4.34        # Python SQL toolkit and ORM

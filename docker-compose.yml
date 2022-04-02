@@ -6,8 +6,7 @@ services:
     build: .
     container_name: rpizwsolar_server_container
     volumes:
-        serverappcode:
-          - type: bind
-          source: ./app
-          target: /home/bin
+      - type: bind
+        source: ./app
+        target: /home/bin
     tty: true
