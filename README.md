@@ -22,3 +22,39 @@ docker-compose up -d
 ```
 docker exec -it rpizwsolar_server_container  /bin/bash
 ```
+
+## Folder Structure
+
+### app
+
+* ```app``` contains everything related to the python application designed to post weather forecast information. 
+
+## Database Breakdown
+
+### currentweather table
+
+* curr_iso_dt
+* curr_temp_c
+* curr_pressure
+* curr_humidity
+* curr_dew_point
+* curr_clouds
+* curr_wind_speed
+* curr_wind_deg
+* curr_weather_id
+* curr_weather_description
+
+### forecastweather table
+
+* curr_iso_dt
+* "iso_dt_list": iso_dt_string,
+* "temp_list": temp_string,
+* "clouds_list" : clouds_string,
+* "weather_id_list": weather_id_string,
+## Environment Variables to Be Set
+
+* OPENWEATHERMAP_APIKEY
+* DBNAME
+* DBUSER
+* DBHOST
+* DBPASSWORD

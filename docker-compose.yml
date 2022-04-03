@@ -8,5 +8,5 @@ services:
     volumes:
       - type: bind
         source: ./app
-        target: /home/bin
+        target: /home/app
     tty: true
