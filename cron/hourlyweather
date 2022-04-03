@@ -23,7 +23,7 @@
 # m h  dom mon dow   command
 
 # add home/app to cronjob visibility
-PATH=/home/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PATH=/home/app/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # get and post the weather to postgres every hour at the minute mark
 1 * * * * getpostweather.py
