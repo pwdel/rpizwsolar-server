@@ -27,3 +27,9 @@ PATH=/home/app/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # get and post the weather to postgres every hour at the minute mark
 1 * * * * getpostweather.py
+
+# to verify cron env, we can do:
+# # post cron's understanding of env every minute
+# * * * * * env > /tmp/env.output
+# if you want a different default home directory for cron outputs, set HOME in crontab
+# HOME=/root by default

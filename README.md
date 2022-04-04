@@ -53,8 +53,8 @@ docker exec -it rpizwsolar_server_container  /bin/bash
 * "weather_id_list": weather_id_string,
 ## Environment Variables to Be Set
 
-* OPENWEATHERMAP_APIKEY
-* DBNAME
-* DBUSER
-* DBHOST
-* DBPASSWORD
+* OPENWEATHERMAP_APIKEY - API from OpenWeatherMap
+* DBNAME - Postgres Database Name
+* DBUSER - Postgres Database Username
+* DBHOST - Postgres Database Host
+* DBPASSWORD - Postgres Database Passwords
