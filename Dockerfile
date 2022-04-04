@@ -51,6 +51,18 @@ WORKDIR /home
 # add actual script to cronjob
 # 1 * * * * getpostweather.py
 
+# start the cron service
+# update-rc.d cron defaults
+# /etc/init.d/cron start
+# message should show:
+# Starting periodic command scheduler: cron.
+
+# to verify cron env, we can do:
+# # post cron's understanding of env every minute
+# * * * * * env > /tmp/env.output
+# if you want a different default home directory for cron outputs, set HOME in crontab
+# HOME=/root by default
+
 
 # execute cron job
 
